@@ -1,0 +1,394 @@
+/* -------------------------------------------- Setting Up Section -------------------------------------------- */
+        /* ---------------------------- Google fonts Section ---------------------------- */
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+        /* ---------------------------- Default settings Section ---------------------------- */
+  
+:root {
+  --def-text-color:white;
+}
+
+
+
+/* -------------------------------------------- Home Section -------------------------------------------- */
+
+
+body {
+  background-color: antiquewhite;
+}
+
+#home {
+  width: 100%;
+  height: 660px;
+  background-image: url(../images/events-heavenly-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: white;
+  position: relative;
+
+}
+
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51 , 0.6);
+  color: white;
+}
+
+#home h2 {
+  font-size: 60px;
+  margin-top: 200px;
+}
+
+#home h2, #home p {
+  text-align: center;
+}
+
+
+        /* ---------------------------- Left Menu Section ---------------------------- */
+
+.setting {
+  /* background-color: rgba(255,255,255,.8); */
+  /* background-color: rgba(214, 46, 51 , 0.6); */
+  z-index: 100;
+  position: fixed;
+  top:0px;
+  left:0px;
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+.setting span {
+  background-color: #333333a3;
+  color: #fff;
+  padding: 10px;
+  margin-top: 250px;
+  cursor: pointer;
+  font-size:30px;
+}
+
+.setting .left-menu {
+  background-color: #111;
+  /* padding:100px; that was working fine*/
+  display: none;
+}
+
+
+.setting .left-menu .inner-box{
+  cursor: pointer;
+  border: 5px solid #333;
+  /* padding:75px; */
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 130px;
+  padding-bottom: 500px;
+}
+
+
+.setting .sidenav a {
+  padding: 20px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  cursor: pointer;
+  transition: background-color 1.5s,padding 1.5s;
+
+}
+
+.sidenav a:hover {
+  color: rgba(214, 46, 51 , 0.4);
+}
+
+/* @media screen and (max-height: 450px)
+.sidenav a {
+    font-size: 18px;
+} */
+
+.setting .closebtn {
+  position: absolute;
+    top: 0;
+    right: 150px;
+    font-size: 36px;
+    margin-left: 50px;
+} 
+
+
+/* -------------------------------------------- Singers Section -------------------------------------------- */
+
+
+#singerInfo {
+  margin: 100px auto; /*The offset problem is here*/
+  width: 50%;
+}
+
+#singerInfo h3 {
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(214, 46, 51 , 0.6);
+  cursor: pointer;
+  color: white;
+}
+
+#singerInfo .first {
+  display: block;
+}
+
+#singerInfo div {
+  padding: 10px;
+  background-color: #ccc;
+  display: none;
+}
+
+/* -------------------------------------------- Count Down Section -------------------------------------------- */
+
+#count-down {
+  width:100%;
+  height: 330px;
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  text-align: center;
+}
+
+/* The overlay layer is created above along with home overylay layer */
+
+#count-down .title {
+  font-size: 60px;
+  /* color: blue; */
+  text-align: center;
+  font-weight: 600;
+}
+
+#count-down .time-content {
+  display: flex;
+  column-gap: 30px;
+  text-align:center !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-content .time {
+  display: flex;
+  flex-direction: column ;
+  /* row-gap: 30px; */
+  align-items: center;
+}
+
+.time .number,
+.time .text {
+  font-weight: 500;
+  color: white ;
+}
+
+.time .number {
+  font-size: 40px;
+}
+
+.time .text {
+  text-transform: capitalize ;
+  font-size: 15px;
+}
+
+        /* ---------------------------- Subscribtion Section ---------------------------- */
+
+.email-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+.email-content p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.email-content .input-box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+
+.input-box input,
+.input-box button {
+  height: 100%;
+  outline: none;
+  border: 1px solid white;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 0 15px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.input-box button {
+  cursor: pointer;
+  color: white;
+  white-space: nowrap;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.input-box button:hover {
+  background-color:white;
+  color: red;
+}
+
+/* @media screen and (max-width:300px) {
+  #count-down .title{
+    font-size: 20px;
+  }
+} */
+
+/* -------------------------------------------- Contact Us Section -------------------------------------------- */
+#contact-us {
+  margin-top: 0px; 
+  /* Check this out later */
+}
+
+.container {
+  padding: 100px 0px;
+}
+
+#contact-us .contactUs-title {
+  text-align: center;
+}
+
+#contact-us .contactUs-title h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contact-us .contactUs-title p {
+  color: #777;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+/* ---------------------------------------------------------- */
+#contact-us .contact-info h3 {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contact-us .contact-info p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+}
+
+#contact-us .icons {
+  margin-top: 50px;
+}
+
+#contact-us .icons p {
+  margin-bottom: 35px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+}
+
+#contact-us .red {
+  color: #D62E33 !important;
+}
+
+#contact-us i {
+  margin-right: 20px;
+  color: #777;
+}
+
+/* ---------------------------------------------------------- */
+
+#contact-us .contact-info .social-list {
+  margin-top: 60px;
+  color: #777;
+}
+
+#contact-us .contact-info .social-list i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+#contact-us i {
+  margin-right: 20px;
+  color: #777;
+}
+
+#contact-us form input, 
+#contact-us form textarea {
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 2px solid rgba(0,0,0,0.2);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  font-size: 15px;
+  font-weight: 500;
+  /* caret-color: #D62E33; */
+}
+
+#contact-us form textarea {
+  height: 200px;
+  resize: vertical;
+  resize: none;
+}
+
+
+#chars,
+#extra-chars {
+  font-size: 20px;
+  color: #D62E33;
+}
+
+
+#contact-us form button {
+  background-color: #D62E33;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
